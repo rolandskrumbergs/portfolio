@@ -38,6 +38,9 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_ISLAND_03968F003 }}
           action: "upload"
+          app_location: "/" # App source code path
+          output_location: "" # Built app content directory - leave empty for static HTML/CSS/JS apps
+          skip_app_build: true # Skip build step since this is a static site
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
